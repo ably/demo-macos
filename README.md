@@ -6,4 +6,4 @@ Start by building all the dependencies using [Carthage](https://github.com/Carth
 carthage update --platform macOS
 ```
 
-Open `AblyMacTest.xcodeproj`.
+Open `AblyMacTest.xcodeproj` and set your Ably key.
