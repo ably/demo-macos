@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7299FE821943CF000D8260F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7299FE721943CF000D8260F /* AppDelegate.swift */; };
+		D7299FEA21943CF000D8260F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7299FE921943CF000D8260F /* ViewController.swift */; };
+		D7299FEC21943CF100D8260F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7299FEB21943CF100D8260F /* Assets.xcassets */; };
+		D7299FEF21943CF100D8260F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7299FED21943CF100D8260F /* Main.storyboard */; };
+		D7BDDD3821959C2A00CC0632 /* msgpack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BDDD3221959C2900CC0632 /* msgpack.framework */; };
+		D7BDDD3921959C2A00CC0632 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BDDD3321959C2900CC0632 /* SocketRocket.framework */; };
+		D7BDDD3A21959C2A00CC0632 /* Ably.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BDDD3421959C2900CC0632 /* Ably.framework */; };
+		D7BDDD3B21959C2A00CC0632 /* KSCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BDDD3521959C2900CC0632 /* KSCrash.framework */; };
+		D7BDDD3C21959C2A00CC0632 /* SAMKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BDDD3621959C2900CC0632 /* SAMKeychain.framework */; };
+		D7BDDD3D21959C2A00CC0632 /* ULID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BDDD3721959C2900CC0632 /* ULID.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D7299FE421943CF000D8260F /* AblyMacTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AblyMacTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7299FE721943CF000D8260F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7299FE921943CF000D8260F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7299FEB21943CF100D8260F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7299FEE21943CF100D8260F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7299FF021943CF100D8260F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7299FF121943CF100D8260F /* AblyMacTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AblyMacTest.entitlements; sourceTree = "<group>"; };
+		D7BDDD3221959C2900CC0632 /* msgpack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = msgpack.framework; path = Carthage/Build/Mac/msgpack.framework; sourceTree = "<group>"; };
+		D7BDDD3321959C2900CC0632 /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketRocket.framework; path = Carthage/Build/Mac/SocketRocket.framework; sourceTree = "<group>"; };
+		D7BDDD3421959C2900CC0632 /* Ably.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ably.framework; path = Carthage/Build/Mac/Ably.framework; sourceTree = "<group>"; };
+		D7BDDD3521959C2900CC0632 /* KSCrash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSCrash.framework; path = Carthage/Build/Mac/KSCrash.framework; sourceTree = "<group>"; };
+		D7BDDD3621959C2900CC0632 /* SAMKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SAMKeychain.framework; path = Carthage/Build/Mac/SAMKeychain.framework; sourceTree = "<group>"; };
+		D7BDDD3721959C2900CC0632 /* ULID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ULID.framework; path = Carthage/Build/Mac/ULID.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7299FE121943CF000D8260F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7BDDD3821959C2A00CC0632 /* msgpack.framework in Frameworks */,
+				D7BDDD3921959C2A00CC0632 /* SocketRocket.framework in Frameworks */,
+				D7BDDD3A21959C2A00CC0632 /* Ably.framework in Frameworks */,
+				D7BDDD3B21959C2A00CC0632 /* KSCrash.framework in Frameworks */,
+				D7BDDD3C21959C2A00CC0632 /* SAMKeychain.framework in Frameworks */,
+				D7BDDD3D21959C2A00CC0632 /* ULID.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7299FDB21943CF000D8260F = {
+			isa = PBXGroup;
+			children = (
+				D7299FE621943CF000D8260F /* AblyMacTest */,
+				D7299FE521943CF000D8260F /* Products */,
+				D7BDDD3121959C2900CC0632 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D7299FE521943CF000D8260F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7299FE421943CF000D8260F /* AblyMacTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7299FE621943CF000D8260F /* AblyMacTest */ = {
+			isa = PBXGroup;
+			children = (
+				D7299FE721943CF000D8260F /* AppDelegate.swift */,
+				D7299FE921943CF000D8260F /* ViewController.swift */,
+				D7299FEB21943CF100D8260F /* Assets.xcassets */,
+				D7299FED21943CF100D8260F /* Main.storyboard */,
+				D7299FF021943CF100D8260F /* Info.plist */,
+				D7299FF121943CF100D8260F /* AblyMacTest.entitlements */,
+			);
+			path = AblyMacTest;
+			sourceTree = "<group>";
+		};
+		D7BDDD3121959C2900CC0632 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7BDDD3421959C2900CC0632 /* Ably.framework */,
+				D7BDDD3521959C2900CC0632 /* KSCrash.framework */,
+				D7BDDD3221959C2900CC0632 /* msgpack.framework */,
+				D7BDDD3621959C2900CC0632 /* SAMKeychain.framework */,
+				D7BDDD3321959C2900CC0632 /* SocketRocket.framework */,
+				D7BDDD3721959C2900CC0632 /* ULID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7299FE321943CF000D8260F /* AblyMacTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7299FF421943CF100D8260F /* Build configuration list for PBXNativeTarget "AblyMacTest" */;
+			buildPhases = (
+				D7299FE021943CF000D8260F /* Sources */,
+				D7299FE121943CF000D8260F /* Frameworks */,
+				D7299FE221943CF000D8260F /* Resources */,
+				D7BDDD402195A43000CC0632 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AblyMacTest;
+			productName = AblyMacTest;
+			productReference = D7299FE421943CF000D8260F /* AblyMacTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7299FDC21943CF000D8260F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Whitesmith;
+				TargetAttributes = {
+					D7299FE321943CF000D8260F = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D7299FDF21943CF000D8260F /* Build configuration list for PBXProject "AblyMacTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7299FDB21943CF000D8260F;
+			productRefGroup = D7299FE521943CF000D8260F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7299FE321943CF000D8260F /* AblyMacTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7299FE221943CF000D8260F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7299FEC21943CF100D8260F /* Assets.xcassets in Resources */,
+				D7299FEF21943CF100D8260F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D7BDDD402195A43000CC0632 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/Ably.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/KSCrash.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/msgpack.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/SAMKeychain.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/SocketRocket.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/ULID.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7299FE021943CF000D8260F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7299FEA21943CF000D8260F /* ViewController.swift in Sources */,
+				D7299FE821943CF000D8260F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D7299FED21943CF100D8260F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7299FEE21943CF100D8260F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7299FF221943CF100D8260F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7299FF321943CF100D8260F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D7299FF521943CF100D8260F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AblyMacTest/AblyMacTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2E58BZR8M3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = AblyMacTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.whitesmith.AblyMacTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		D7299FF621943CF100D8260F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AblyMacTest/AblyMacTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2E58BZR8M3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = AblyMacTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.whitesmith.AblyMacTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7299FDF21943CF000D8260F /* Build configuration list for PBXProject "AblyMacTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7299FF221943CF100D8260F /* Debug */,
+				D7299FF321943CF100D8260F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7299FF421943CF100D8260F /* Build configuration list for PBXNativeTarget "AblyMacTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7299FF521943CF100D8260F /* Debug */,
+				D7299FF621943CF100D8260F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7299FDC21943CF000D8260F /* Project object */;
+}

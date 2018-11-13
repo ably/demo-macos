@@ -1,0 +1,6 @@
+git "file:///Users/ricardopereira/Repositories/Whitesmith/ULID" "5c3b29ed81e4ee1c12900138c2ffa8f3e9beaf9e"
+git "file:///Users/ricardopereira/Repositories/Whitesmith/ably-ios" "be1945a187ceaf59e8e1c4de36c95d848765af2c"
+git "file:///Users/ricardopereira/Repositories/Whitesmith/msgpack-objective-C" "fc7577a0dfaefd763430cd42476b5d09ce1ef394"
+github "ably-forks/KSCrash" "1.15.8-ably-2"
+github "ably-forks/SocketRocket" "0.5.2-ably-2"
+github "soffes/SAMKeychain" "v1.5.3"
