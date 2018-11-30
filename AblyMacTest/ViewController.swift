@@ -33,8 +33,11 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        realtime1 = ARTRealtime(key: appKey)
-        realtime2 = ARTRealtime(key: appKey)
+        let options = ARTClientOptions(key: appKey)
+        options.logLevel = .debug
+
+        realtime1 = ARTRealtime(options: options)
+        realtime2 = ARTRealtime(options: options)
 
         channel1 = realtime1.channels.get(channelName)
         channel2 = realtime2.channels.get(channelName)
