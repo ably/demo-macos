@@ -170,7 +170,7 @@
 				"$(SRCROOT)/Carthage/Build/Mac/KSCrash.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/msgpack.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/SAMKeychain.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/SocketRocket.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/SocketRocketAblyFork.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/ULID.framework",
 			);
 			name = Carthage;
