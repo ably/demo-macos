@@ -11,12 +11,7 @@
 		D7299FEA21943CF000D8260F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7299FE921943CF000D8260F /* ViewController.swift */; };
 		D7299FEC21943CF100D8260F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7299FEB21943CF100D8260F /* Assets.xcassets */; };
 		D7299FEF21943CF100D8260F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7299FED21943CF100D8260F /* Main.storyboard */; };
-		D7BDDD3821959C2A00CC0632 /* msgpack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BDDD3221959C2900CC0632 /* msgpack.framework */; };
-		D7BDDD3921959C2A00CC0632 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BDDD3321959C2900CC0632 /* SocketRocket.framework */; };
 		D7BDDD3A21959C2A00CC0632 /* Ably.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BDDD3421959C2900CC0632 /* Ably.framework */; };
-		D7BDDD3B21959C2A00CC0632 /* KSCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BDDD3521959C2900CC0632 /* KSCrash.framework */; };
-		D7BDDD3C21959C2A00CC0632 /* SAMKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BDDD3621959C2900CC0632 /* SAMKeychain.framework */; };
-		D7BDDD3D21959C2A00CC0632 /* ULID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BDDD3721959C2900CC0632 /* ULID.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,12 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7BDDD3821959C2A00CC0632 /* msgpack.framework in Frameworks */,
-				D7BDDD3921959C2A00CC0632 /* SocketRocket.framework in Frameworks */,
 				D7BDDD3A21959C2A00CC0632 /* Ably.framework in Frameworks */,
-				D7BDDD3B21959C2A00CC0632 /* KSCrash.framework in Frameworks */,
-				D7BDDD3C21959C2A00CC0632 /* SAMKeychain.framework in Frameworks */,
-				D7BDDD3D21959C2A00CC0632 /* ULID.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +95,7 @@
 				D7299FE021943CF000D8260F /* Sources */,
 				D7299FE121943CF000D8260F /* Frameworks */,
 				D7299FE221943CF000D8260F /* Resources */,
-				D7BDDD402195A43000CC0632 /* ShellScript */,
+				D7BDDD402195A43000CC0632 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -128,6 +118,7 @@
 				TargetAttributes = {
 					D7299FE321943CF000D8260F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -167,7 +158,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D7BDDD402195A43000CC0632 /* ShellScript */ = {
+		D7BDDD402195A43000CC0632 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -182,6 +173,7 @@
 				"$(SRCROOT)/Carthage/Build/Mac/SocketRocket.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/ULID.framework",
 			);
+			name = Carthage;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -350,7 +342,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.ably.AblyMacTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -373,7 +365,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.ably.AblyMacTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
